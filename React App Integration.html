@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>React App Integration</title>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script src="https://unpkg.com/react/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+
+  <script>
+    // Your React app code goes here
+    // You can define your components and logic in this script tag
+    // For simplicity, let's assume you have a component called App
+
+    function App() {
+      return (
+        <div>
+          <h1>Hello, React App!</h1>
+          <button onClick={handleClick}>Click me</button>
+        </div>
+      );
+    }
+
+    function handleClick() {
+      alert('Button clicked!');
+    }
+
+    ReactDOM.render(<App />, document.getElementById('root'));
+  </script>
+</body>
+</html>
